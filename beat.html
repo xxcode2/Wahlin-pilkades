@@ -67,7 +67,7 @@
   /* ---------- mockup: surat suara ---------- */
   .scr{background:#fff;border:2px solid var(--line);border-radius:12px;padding:10px;}
   .scr .topbar{height:8px;border-radius:4px;background:var(--merah);margin-bottom:8px;}
-  .barisCalon{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;}
+  .barisCalon{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
   .mini{border:2px solid var(--line);border-radius:8px;padding:6px 4px;text-align:center;position:relative;}
   .mini .no{width:16px;height:16px;border-radius:50%;background:var(--merah);color:#fff;font-size:0.5rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 4px;}
   .mini .foto{width:100%;aspect-ratio:4/5;border-radius:5px;background:#eee;margin-bottom:4px;position:relative;overflow:hidden;}
@@ -105,8 +105,9 @@
   .rekap .bars{display:flex;gap:8px;align-items:flex-end;height:120px;padding:8px 4px 0;}
   .rekap .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;}
   .rekap .bar{width:100%;border-radius:5px 5px 0 0;background:var(--abu);}
+  .rekap .col:first-child .bar{background:var(--gold);}
   .rekap .col:nth-child(2) .bar{background:var(--biru);}
-  .rekap .col:nth-child(4) .bar{background:var(--merah);}
+  .rekap .col:nth-child(3) .bar{background:var(--merah);}
   .rekap .noL{font-size:0.55rem;font-weight:800;color:var(--ink-soft);}
   .rekap .crown{font-size:0.7rem;}
 
@@ -190,15 +191,13 @@
 
     <!-- ===== 3. SURAT SUARA ===== -->
     <div class="node">
-      <div class="judul"><div class="stepno">3</div><div><b>Surat Suara — 5 Calon</b><small>nomor 66 sampai 70, satu baris</small></div></div>
+      <div class="judul"><div class="stepno">3</div><div><b>Surat Suara — 3 Calon</b><small>nomor 1 sampai 3, satu baris</small></div></div>
       <div class="scr">
         <div class="topbar"></div>
         <div class="barisCalon">
-          <div class="mini"><div class="no">66</div><div class="foto"><i class="rbt" style="background:#7a4a26;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini"><div class="no">67</div><div class="foto"><i class="rbt" style="background:#232323;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini"><div class="no">68</div><div class="foto"><i class="rbt" style="background:#e2b24c;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini"><div class="no">69</div><div class="foto"><i class="rbt" style="background:#3d2b20;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini"><div class="no">70</div><div class="foto"><i class="rbt" style="background:#1d1d24;"></i><i class="kep"></i></div><div class="nama"></div></div>
+          <div class="mini"><div class="no">1</div><div class="foto"><i class="rbt" style="background:#7a4a26;"></i><i class="kep"></i></div><div class="nama"></div></div>
+          <div class="mini"><div class="no">2</div><div class="foto"><i class="rbt" style="background:#232323;"></i><i class="kep"></i></div><div class="nama"></div></div>
+          <div class="mini"><div class="no">3</div><div class="foto"><i class="rbt" style="background:#e2b24c;"></i><i class="kep"></i></div><div class="nama"></div></div>
         </div>
         <div class="btnbar">PILIH KANDIDAT INI</div>
       </div>
@@ -215,15 +214,13 @@
       <div class="scr">
         <div class="topbar"></div>
         <div class="barisCalon">
-          <div class="mini"><div class="no">66</div><div class="foto"><i class="rbt" style="background:#7a4a26;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini"><div class="no">67</div><div class="foto"><i class="rbt" style="background:#232323;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini tandai"><div class="no">68</div><div class="foto"><i class="rbt" style="background:#e2b24c;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini"><div class="no">69</div><div class="foto"><i class="rbt" style="background:#3d2b20;"></i><i class="kep"></i></div><div class="nama"></div></div>
-          <div class="mini"><div class="no">70</div><div class="foto"><i class="rbt" style="background:#1d1d24;"></i><i class="kep"></i></div><div class="nama"></div></div>
+          <div class="mini tandai"><div class="no">1</div><div class="foto"><i class="rbt" style="background:#7a4a26;"></i><i class="kep"></i></div><div class="nama"></div></div>
+          <div class="mini"><div class="no">2</div><div class="foto"><i class="rbt" style="background:#232323;"></i><i class="kep"></i></div><div class="nama"></div></div>
+          <div class="mini"><div class="no">3</div><div class="foto"><i class="rbt" style="background:#e2b24c;"></i><i class="kep"></i></div><div class="nama"></div></div>
         </div>
         <div class="btnbar armed">PILIH KANDIDAT INI</div>
       </div>
-      <p class="caption">Calon 68 ditandai → tombol jadi <b>merah</b> dan bisa ditekan. Boleh pindah tanda ke kartu lain sebelum menekan.</p>
+      <p class="caption">Calon 1 ditandai → tombol jadi <b>merah</b> dan bisa ditekan. Boleh pindah tanda ke kartu lain sebelum menekan.</p>
     </div>
 
     <div class="arrow"><div class="lbl">konfirmasi muncul</div>
@@ -234,9 +231,9 @@
     <div class="node">
       <div class="judul"><div class="stepno">5</div><div><b>Konfirmasi Pilihan</b><small>pastikan benar sebelum menekan Pilih</small></div></div>
       <div class="modalMock">
-        <div class="mNo">CALON NOMOR 68</div>
+        <div class="mNo">CALON NOMOR 1</div>
         <div class="mFoto"><i class="rbt" style="position:absolute;left:50%;top:12%;transform:translateX(-50%);width:62%;height:32%;border-radius:50% 50% 40% 40%;background:#e2b24c;"></i><i style="position:absolute;left:50%;top:26%;transform:translateX(-50%);width:54%;height:52%;border-radius:50%;background:#f6d0ac;"></i></div>
-        <div class="mNama">Ethan Walsh</div>
+        <div class="mNama">Wahlin Wagianto</div>
         <div class="mAksi"><b class="bAbu">⟲ Ulangi</b><b class="bBiru">✓ Pilih</b></div>
       </div>
       <p class="caption"><b>Ulangi</b> (abu, kiri) = kembali menandai, belum ada suara tercatat. <b>Pilih</b> (biru, kanan) = suara resmi masuk.</p>
@@ -274,11 +271,9 @@
       <div class="scr rekap">
         <div class="topbar" style="background:var(--hijau);"></div>
         <div class="bars">
-          <div class="col"><div class="bar" style="height:45%;"></div><div class="noL">66</div></div>
-          <div class="col"><span class="crown">👑</span><div class="bar" style="height:85%;"></div><div class="noL">67</div></div>
-          <div class="col"><div class="bar" style="height:25%;"></div><div class="noL">68</div></div>
-          <div class="col"><div class="bar" style="height:60%;"></div><div class="noL">69</div></div>
-          <div class="col"><div class="bar" style="height:35%;"></div><div class="noL">70</div></div>
+          <div class="col"><span class="crown">👑</span><div class="bar" style="height:85%;"></div><div class="noL">1</div></div>
+          <div class="col"><div class="bar" style="height:60%;"></div><div class="noL">2</div></div>
+          <div class="col"><div class="bar" style="height:35%;"></div><div class="noL">3</div></div>
         </div>
       </div>
       <p class="caption">Satu resi hanya dihitung <b>satu kali</b>. Resi discan ulang → <b>ditolak</b> sebagai duplikat.</p>

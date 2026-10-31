@@ -240,8 +240,16 @@
 
   .candidates{
     display:grid;
-    grid-template-columns:repeat(5,minmax(0,1fr));
+    grid-template-columns:repeat(3,minmax(0,1fr));
     gap:clamp(6px,1vw,14px);
+  }
+  @media(max-width:640px){
+    .candidates{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .candidate-card:last-child:nth-child(odd){
+      grid-column:1 / -1;
+      width:calc(50% - 3px);
+      justify-self:center;
+    }
   }
 
   .candidate-card{
@@ -773,7 +781,7 @@
       </div>
       <h2>Pilih Salah Satu Calon</h2>
       <p>Sentuh kartu calon untuk menandai (bingkai merah), lalu tekan tombol "Pilih Kandidat Ini" di bawah dan konfirmasi.</p>
-      <p class="nuance-hint">Bersama Nomor 1, Wujudkan Bojongloa Bersatu &amp; Maju 🌾</p>
+      <p class="nuance-hint">Kenali visi dan misi, pilih dengan bijak.</p>
     </div>
     <div class="kertas-suara">
       <div class="candidates" id="candidateGrid"></div>
